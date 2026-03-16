@@ -4,8 +4,8 @@ public class ConeZombieBuilder : ZombieBuilder
 {
     public override void BuildAccessory()
     {
-        accessory = new ZombieAccessory(25);
-
+        accessory = new ZombieAccessory(25, ZombieType.Cone);
+        
         if (product != null)
         {
             accessory.addChild(product);
@@ -14,7 +14,7 @@ public class ConeZombieBuilder : ZombieBuilder
         {
             throw new InvalidOperationException("Zombie must be built before adding an accessory.");
         }
-        
+
         product = accessory;
     }
 }

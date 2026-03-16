@@ -6,7 +6,7 @@ public abstract class ZombieBuilder
 
     public void BuildZombie()
     {
-        product = new Zombie(50);
+        product = new Zombie(50, ZombieType.Regular);
     }
 
     public abstract void BuildAccessory();

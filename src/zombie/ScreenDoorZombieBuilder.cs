@@ -4,7 +4,7 @@ public class ScreenDoorZombieBuilder : ZombieBuilder
 {
     public override void BuildAccessory()
     {
-        accessory = new ZombieAccessory(25);
+        accessory = new ZombieAccessory(25, ZombieType.ScreenDoor);
 
         if (product != null)
         {

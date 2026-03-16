@@ -1,10 +1,10 @@
 namespace Zombie;
 
-public class ConeZombieBuilder : ZombieBuilder
+public class BucketZombieBuilder : ZombieBuilder
 {
     public override void BuildAccessory()
     {
-        ZombieAccessory accessory = new ZombieAccessory(100);
+        ZombieAccessory accessory = new ZombieAccessory(100, ZombieType.Bucket);
 
         if (GetProduct() != null)
         {
