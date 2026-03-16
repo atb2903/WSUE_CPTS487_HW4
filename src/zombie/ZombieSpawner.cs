@@ -2,7 +2,7 @@ namespace Zombie;
 
 public class ZombieSpawner
 {
-    private ZombieBuilder builder;
+    private ZombieBuilder builder = new RegularZombieBuilder(); // Default builder, will be overridden in SpawnZombie
 
     public ZombieComponent SpawnZombie(ZombieType type)
     {
@@ -22,7 +22,6 @@ public class ZombieSpawner
                 break;
             default:
                 throw new ArgumentException("Invalid zombie type");
-                break;
         }
 
         builder.BuildZombie();

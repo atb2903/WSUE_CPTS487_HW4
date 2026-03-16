@@ -25,6 +25,10 @@ public class ZombieAccessory : ZombieComponent
 
     public override void TakeDamage(int damage)
     {
+        if(child == null)
+        {
+            throw new InvalidOperationException("Accessory must have a child to take damage..");
+        }
         if(isAlive)
         {
             health -= damage;
@@ -42,12 +46,20 @@ public class ZombieAccessory : ZombieComponent
 
     public override bool IsAlive()
     {
+        if(child == null)
+        {
+            throw new InvalidOperationException("Accessory must have a child to check if alive.");
+        }
         // Accessory acts acts a proxy for the child when dead
         return isAlive || child.IsAlive();
     }
 
     protected override void Die()
     {
+        if(child == null)
+        {
+            throw new InvalidOperationException("Accessory must have a child to die.");
+        }
         // Accessory acts acts a proxy for the child when dead
         this.isAlive = false;
         this.type = child.GetZombieType();
