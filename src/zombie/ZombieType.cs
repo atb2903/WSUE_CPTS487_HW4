@@ -1,6 +1,6 @@
 namespace Zombie;
 
-enum ZombieType
+public enum ZombieType
 {
     Regular,
     Cone,
