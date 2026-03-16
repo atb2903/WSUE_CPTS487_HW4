@@ -1,41 +1,44 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLPackage</id><coordinates><x>1070</x><y>300</y><w>570</w><h>280</h></coordinates><panel_attributes>Composite
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1190</x><y>330</y><w>140</w><h>80</h></coordinates><panel_attributes>/ZombieComponent/
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLPackage</id><coordinates><x>930</x><y>300</y><w>570</w><h>280</h></coordinates><panel_attributes>Composite
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1050</x><y>330</y><w>140</w><h>80</h></coordinates><panel_attributes>/ZombieComponent/
 --
 int Health
 --
 ZombieComponent(int)
-/TakeDamage(int)/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1350</x><y>460</y><w>180</w><h>110</h></coordinates><panel_attributes>ZombieAccessory
+/TakeDamage(int)/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1210</x><y>460</y><w>180</w><h>110</h></coordinates><panel_attributes>ZombieAccessory
 --
 ZombieComponent? child
 --
 addChild(ZombieComponent)
 removeChild()
 getChild()
-TakeDamage(int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1190</x><y>460</y><w>110</w><h>50</h></coordinates><panel_attributes>Zombie
+TakeDamage(int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1050</x><y>460</y><w>110</w><h>50</h></coordinates><panel_attributes>Zombie
 --
 --
-TakeDamage(int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1240</x><y>400</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>1240</x><y>430</y><w>210</w><h>50</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;190;10;190;30</additional_attributes></element><element><id>Relation</id><coordinates><x>1320</x><y>330</y><w>200</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
-1</panel_attributes><additional_attributes>180;130;180;20;10;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>1080</x><y>340</y><w>90</w><h>30</h></coordinates><panel_attributes>Component</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>1120</x><y>460</y><w>50</w><h>30</h></coordinates><panel_attributes>Leaf</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>1550</x><y>460</y><w>80</w><h>30</h></coordinates><panel_attributes>Composite</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1520</x><y>470</y><w>50</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;30;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1160</x><y>470</y><w>50</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;30;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1160</x><y>350</y><w>50</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;30;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>190</y><w>100</w><h>100</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
+TakeDamage(int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1100</x><y>400</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>1100</x><y>430</y><w>210</w><h>50</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;190;10;190;30</additional_attributes></element><element><id>Relation</id><coordinates><x>1180</x><y>330</y><w>200</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+1</panel_attributes><additional_attributes>180;130;180;20;10;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>940</x><y>340</y><w>90</w><h>30</h></coordinates><panel_attributes>Component</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>980</x><y>460</y><w>50</w><h>30</h></coordinates><panel_attributes>Leaf</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>1410</x><y>460</y><w>80</w><h>30</h></coordinates><panel_attributes>Composite</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1380</x><y>470</y><w>50</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;30;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1020</x><y>470</y><w>50</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;30;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1020</x><y>350</y><w>50</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;30;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>190</y><w>100</w><h>100</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
 ZombieType
 --
 Regular
 Cone
 Bucket
-ScreenDoor</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>340</y><w>170</w><h>70</h></coordinates><panel_attributes>ZombieSpawner
+ScreenDoor</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>340</y><w>170</w><h>70</h></coordinates><panel_attributes>ZombieSpawner
 --
 ZombieBuilder builder
 --
-SpawnZombie(ZombieType)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>280</y><w>70</w><h>80</h></coordinates><panel_attributes>lt=-
-accepts</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>610</x><y>160</y><w>440</w><h>390</h></coordinates><panel_attributes>Builder
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>870</x><y>340</y><w>170</w><h>100</h></coordinates><panel_attributes>/ZombieBuilder/
+SpawnZombie(ZombieType)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>280</y><w>70</w><h>80</h></coordinates><panel_attributes>lt=-
+accepts</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>470</x><y>160</y><w>440</w><h>390</h></coordinates><panel_attributes>Builder
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>340</y><w>170</w><h>100</h></coordinates><panel_attributes>/ZombieBuilder/
 --
 ZombieComponent? product
 --
 BuildZombie()
 /BuildAccessory()/
 GetProduct()
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>330</y><w>110</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
-builder</panel_attributes><additional_attributes>10;20;90;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>870</x><y>490</y><w>140</w><h>50</h></coordinates><panel_attributes>RegularZombieBuilder
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>330</y><w>110</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+builder</panel_attributes><additional_attributes>10;20;90;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>490</y><w>140</w><h>50</h></coordinates><panel_attributes>RegularZombieBuilder
 --
-BuildAccessory()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>940</x><y>430</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>1000</x><y>480</y><w>210</w><h>40</h></coordinates><panel_attributes>lt=-
-builds</panel_attributes><additional_attributes>10;20;190;20</additional_attributes></element></diagram>
+BuildAccessory()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>430</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>860</x><y>480</y><w>210</w><h>40</h></coordinates><panel_attributes>lt=-
+builds</panel_attributes><additional_attributes>10;20;190;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>490</y><w>120</w><h>50</h></coordinates><panel_attributes>ConeZombieBuilder
+--
+BuildAccessory()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>530</y><w>640</w><h>90</h></coordinates><panel_attributes>lt=-
+builds</panel_attributes><additional_attributes>10;10;10;70;620;70;620;40</additional_attributes></element></diagram>
