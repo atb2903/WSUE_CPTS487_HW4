@@ -50,6 +50,6 @@ public class ZombieAccessory : ZombieComponent
     {
         // Accessory acts acts a proxy for the child when dead
         this.isAlive = false;
-        this.ZombieType = child.GetZombieType();
+        this.type = child.GetZombieType();
     }
 }
