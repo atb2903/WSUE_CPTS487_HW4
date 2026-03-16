@@ -46,7 +46,7 @@ public class ZombieAccessory : ZombieComponent
         return isAlive || child.IsAlive();
     }
 
-    private override void Die()
+    protected override void Die()
     {
         // Accessory acts acts a proxy for the child when dead
         this.isAlive = false;

@@ -15,7 +15,7 @@ public class Zombie : ZombieComponent
         }
     }
 
-    private override void Die()
+    protected override void Die()
     {
         isAlive = false;
     }

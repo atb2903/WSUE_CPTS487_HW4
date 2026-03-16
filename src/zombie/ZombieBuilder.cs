@@ -2,7 +2,7 @@ namespace Zombie;
 
 public abstract class ZombieBuilder
 {
-    private ZombieComponent? product = null;
+    protected ZombieComponent? product = null;
 
     public void BuildZombie()
     {
