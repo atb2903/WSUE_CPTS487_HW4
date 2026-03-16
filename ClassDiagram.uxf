@@ -1,4 +1,5 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLPackage</id><coordinates><x>930</x><y>270</y><w>570</w><h>310</h></coordinates><panel_attributes>Composite
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLPackage</id><coordinates><x>930</x><y>270</y><w>570</w><h>310</h></coordinates><panel_attributes>bg=gray
+Composite
 --</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1050</x><y>300</y><w>220</w><h>110</h></coordinates><panel_attributes>/ZombieComponent/
 --
 int Health
@@ -28,7 +29,8 @@ ScreenDoor</panel_attributes><additional_attributes></additional_attributes></el
 ZombieBuilder builder
 --
 SpawnZombie(ZombieType)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>280</y><w>70</w><h>80</h></coordinates><panel_attributes>lt=-
-accepts</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>220</x><y>310</y><w>690</w><h>240</h></coordinates><panel_attributes>Builder
+accepts</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>220</x><y>310</y><w>690</w><h>240</h></coordinates><panel_attributes>bg=gray
+Builder
 --</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>340</y><w>170</w><h>100</h></coordinates><panel_attributes>/ZombieBuilder/
 --
 ZombieComponent? product
