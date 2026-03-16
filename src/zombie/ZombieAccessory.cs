@@ -34,7 +34,7 @@ public class ZombieAccessory : ZombieComponent
             health -= damage;
             if (health <= 0)
             {
-                child.TakeDamage(health); // Pass remaining damage to child and die
+                child.TakeDamage(Math.Abs(health)); // Pass remaining damage to child and die
                 health = 0; // Ensure health doesn't go negative
                 Die();
             }
