@@ -55,7 +55,7 @@
                     Console.Write("Enter damage per shot (default 25): ");
                     string? damageInput = Console.ReadLine();
                     int damage;
-                    if(!int.TryParse(damageInput, out damage))
+                    if(!int.TryParse(damageInput, out damage) || damage <= 0)
                     {
                         Console.WriteLine("Invalid input. Defaulting to 25 damage.");
                         damage = 25;
