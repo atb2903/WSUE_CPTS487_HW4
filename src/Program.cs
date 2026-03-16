@@ -52,12 +52,21 @@
                     zombies.Add(spawner.SpawnZombie(type));
                     break;
                 case "2":
+                    Console.Write("Enter damage per shot (default 25): ");
+                    string? damageInput = Console.ReadLine();
+                    int damage;
+                    if(!int.TryParse(damageInput, out damage))
+                    {
+                        Console.WriteLine("Invalid input. Defaulting to 25 damage.");
+                        damage = 25;
+                    }
+                    Console.WriteLine("Starting simulation with damage as " + damage + ".");
                     bool simulating = true;
                     int round = 0;
                     while(simulating)
                     {
                         Console.WriteLine("Round " + round + ": " + BuildZombieString());
-                        Shoot(25);
+                        Shoot(damage);
                         round++;
                         if(LivingZombieCount() == 0)
                         {
