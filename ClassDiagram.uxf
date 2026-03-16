@@ -1,10 +1,12 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLPackage</id><coordinates><x>930</x><y>300</y><w>570</w><h>280</h></coordinates><panel_attributes>Composite
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1050</x><y>330</y><w>140</w><h>80</h></coordinates><panel_attributes>/ZombieComponent/
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLPackage</id><coordinates><x>930</x><y>270</y><w>570</w><h>310</h></coordinates><panel_attributes>Composite
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1050</x><y>300</y><w>220</w><h>110</h></coordinates><panel_attributes>/ZombieComponent/
 --
 int Health
+ZombieType type
 --
-ZombieComponent(int)
-/TakeDamage(int)/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1210</x><y>460</y><w>180</w><h>110</h></coordinates><panel_attributes>ZombieAccessory
+ZombieComponent(int, ZombieType)
+/TakeDamage(int)/
+GetZombieType()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1210</x><y>460</y><w>180</w><h>110</h></coordinates><panel_attributes>ZombieAccessory
 --
 ZombieComponent? child
 --
@@ -14,8 +16,8 @@ getChild()
 TakeDamage(int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1050</x><y>460</y><w>110</w><h>50</h></coordinates><panel_attributes>Zombie
 --
 --
-TakeDamage(int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1100</x><y>400</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>1100</x><y>430</y><w>210</w><h>50</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;190;10;190;30</additional_attributes></element><element><id>Relation</id><coordinates><x>1180</x><y>330</y><w>200</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
-1</panel_attributes><additional_attributes>180;130;180;20;10;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>940</x><y>340</y><w>90</w><h>30</h></coordinates><panel_attributes>Component</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>980</x><y>460</y><w>50</w><h>30</h></coordinates><panel_attributes>Leaf</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>1410</x><y>460</y><w>80</w><h>30</h></coordinates><panel_attributes>Composite</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1380</x><y>470</y><w>50</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;30;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1020</x><y>470</y><w>50</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;30;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1020</x><y>350</y><w>50</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;30;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>190</y><w>100</w><h>100</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
+TakeDamage(int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1100</x><y>400</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>1100</x><y>430</y><w>210</w><h>50</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;190;10;190;30</additional_attributes></element><element><id>Relation</id><coordinates><x>1260</x><y>340</y><w>130</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+1</panel_attributes><additional_attributes>100;120;100;10;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>940</x><y>340</y><w>90</w><h>30</h></coordinates><panel_attributes>Component</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>980</x><y>460</y><w>50</w><h>30</h></coordinates><panel_attributes>Leaf</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>1410</x><y>460</y><w>80</w><h>30</h></coordinates><panel_attributes>Composite</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1380</x><y>470</y><w>50</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;30;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1020</x><y>470</y><w>50</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;30;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1020</x><y>350</y><w>50</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;30;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>190</y><w>100</w><h>100</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
 ZombieType
 --
 Regular
@@ -26,7 +28,7 @@ ScreenDoor</panel_attributes><additional_attributes></additional_attributes></el
 ZombieBuilder builder
 --
 SpawnZombie(ZombieType)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>280</y><w>70</w><h>80</h></coordinates><panel_attributes>lt=-
-accepts</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>220</x><y>160</y><w>690</w><h>390</h></coordinates><panel_attributes>Builder
+accepts</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>220</x><y>310</y><w>690</w><h>240</h></coordinates><panel_attributes>Builder
 --</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>340</y><w>170</w><h>100</h></coordinates><panel_attributes>/ZombieBuilder/
 --
 ZombieComponent? product
@@ -47,4 +49,5 @@ BuildAccessory()</panel_attributes><additional_attributes></additional_attribute
 builds</panel_attributes><additional_attributes>10;10;10;90;810;90;810;40</additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>490</y><w>160</w><h>50</h></coordinates><panel_attributes>ScreenDoorZombieBuilder
 --
 BuildAccessory()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>460</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>180;10;10;10;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>530</y><w>1000</w><h>130</h></coordinates><panel_attributes>lt=-
-builds</panel_attributes><additional_attributes>10;10;10;110;980;110;980;40</additional_attributes></element></diagram>
+builds</panel_attributes><additional_attributes>10;10;10;110;980;110;980;40</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>270</y><w>500</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+1</panel_attributes><additional_attributes>480;40;40;40;40;10;10;10</additional_attributes></element></diagram>
