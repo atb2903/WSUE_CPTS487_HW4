@@ -35,6 +35,7 @@ public class ZombieAccessory : ZombieComponent
             if (health <= 0)
             {
                 child.TakeDamage(health); // Pass remaining damage to child and die
+                health = 0; // Ensure health doesn't go negative
                 Die();
             }
         }
@@ -52,6 +53,15 @@ public class ZombieAccessory : ZombieComponent
         }
         // Accessory acts acts a proxy for the child when dead
         return isAlive || child.IsAlive();
+    }
+
+    public override int GetHealth()
+    {
+        if(child == null)
+        {
+            throw new InvalidOperationException("Accessory must have a child to get health.");
+        }
+        return health + child.GetHealth(); // Total health is accessory's health plus child's health
     }
 
     protected override void Die()

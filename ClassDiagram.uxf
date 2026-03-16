@@ -1,6 +1,6 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLPackage</id><coordinates><x>850</x><y>210</y><w>570</w><h>380</h></coordinates><panel_attributes>bg=gray
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLPackage</id><coordinates><x>850</x><y>190</y><w>570</w><h>410</h></coordinates><panel_attributes>bg=gray
 Composite
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>970</x><y>240</y><w>220</w><h>150</h></coordinates><panel_attributes>bg=orange
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>970</x><y>220</y><w>220</w><h>170</h></coordinates><panel_attributes>bg=orange
 /ZombieComponent/
 --
 int Health
@@ -11,7 +11,8 @@ ZombieComponent(int, ZombieType)
 /TakeDamage(int)/
 GetZombieType()
 IsAlive()
-/Die()/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1130</x><y>440</y><w>180</w><h>140</h></coordinates><panel_attributes>bg=orange
+GetHealth()
+/Die()/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1130</x><y>440</y><w>180</w><h>150</h></coordinates><panel_attributes>bg=orange
 ZombieAccessory
 --
 ZombieComponent? child
@@ -21,6 +22,7 @@ removeChild()
 getChild()
 TakeDamage(int)
 IsAlive()
+GetHealth()
 Die()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>970</x><y>440</y><w>110</w><h>70</h></coordinates><panel_attributes>bg=orange
 Zombie
 --
@@ -68,8 +70,8 @@ builds</panel_attributes><additional_attributes>10;10;10;60;760;60</additional_a
 ScreenDoorZombieBuilder
 --
 --
-BuildAccessory()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>440</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>180;10;10;10;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>510</y><w>940</w><h>110</h></coordinates><panel_attributes>lt=-
-builds</panel_attributes><additional_attributes>10;10;10;90;920;90;920;70</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>240</y><w>500</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+BuildAccessory()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>440</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>180;10;10;10;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>510</y><w>940</w><h>120</h></coordinates><panel_attributes>lt=-
+builds</panel_attributes><additional_attributes>10;10;10;100;920;100;920;80</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>240</y><w>500</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
 1</panel_attributes><additional_attributes>480;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>320</y><w>170</w><h>70</h></coordinates><panel_attributes>bg=orange
 ZombieSpawner
 --

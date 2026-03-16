@@ -1,7 +1,7 @@
 ﻿class Program
 {
-    List<Zombie.ZombieComponent> zombies = new List<Zombie.ZombieComponent>();
-    Zombie.ZombieSpawner spawner = new Zombie.ZombieSpawner();
+    static List<Zombie.ZombieComponent> zombies = new List<Zombie.ZombieComponent>();
+    static Zombie.ZombieSpawner spawner = new Zombie.ZombieSpawner();
 
     static void Main(string[] args)
     {
@@ -73,8 +73,10 @@
                 case "4":
                     Console.WriteLine("Exiting...");
                     executing = false;
+                    break;
                 default:
                     Console.WriteLine("Invalid option. Please try again.");
+                    break;
             }
 
             Console.WriteLine();
@@ -84,7 +86,7 @@
         Console.ReadKey();
     }
 
-    private string BuildZombieString()
+    private static string BuildZombieString()
     {
         string result = "[";
         foreach(Zombie.ZombieComponent zombie in zombies)
@@ -108,7 +110,7 @@
                 }
                 result += "/";
                 result += zombie.GetHealth().ToString();
-                if(zombie is not zombies.getLast())
+                if(zombie != zombies.Last())
                 {
                     result += ", ";
                 }
@@ -118,7 +120,7 @@
         return result;
     }
 
-    private int LivingZombieCount()
+    private static int LivingZombieCount()
     {
         int count = 0;
         foreach(Zombie.ZombieComponent zombie in zombies)
@@ -131,7 +133,7 @@
         return count;
     }
 
-    private void Shoot(int damage)
+    private static void Shoot(int damage)
     {
         foreach(Zombie.ZombieComponent zombie in zombies)
         {

@@ -9,5 +9,6 @@ public abstract class ZombieComponent(int health, ZombieType type)
     public abstract void TakeDamage(int damage);
     public ZombieType GetZombieType() => type;
     public virtual bool IsAlive() => isAlive;
+    public virtual int GetHealth() => health;
     protected abstract void Die();
 }
