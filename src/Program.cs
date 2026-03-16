@@ -65,6 +65,7 @@
                         }
                     }
                     Console.WriteLine("Round " + round + ": " + BuildZombieString());
+                    zombies.Clear(); // remove the dead zombies to reset for next simulation
                     break;
                 case "3":
                     zombies.Clear();
