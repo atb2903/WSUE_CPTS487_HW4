@@ -4,7 +4,7 @@ public class ConeZombieBuilder : ZombieBuilder
 {
     public override void BuildAccessory()
     {
-        accessory = new ZombieAccessory(25, ZombieType.Cone);
+        ZombieAccessory accessory = new ZombieAccessory(25, ZombieType.Cone);
         
         if (product != null)
         {
