@@ -42,11 +42,13 @@ public class ZombieAccessory : ZombieComponent
 
     public override bool IsAlive()
     {
+        // Accessory acts acts a proxy for the child when dead
         return isAlive || child.IsAlive();
     }
 
     private override void Die()
     {
+        // Accessory acts acts a proxy for the child when dead
         this.isAlive = false;
         this.ZombieType = child.GetZombieType();
     }
