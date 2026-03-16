@@ -11,8 +11,12 @@ public abstract class ZombieBuilder
 
     public abstract void BuildAccessory();
 
-    public ZombieComponent? GetProduct()
+    public ZombieComponent GetProduct()
     {
+        if (product == null)
+        {
+            throw new InvalidOperationException("Product has not been built yet");
+        }
         return product;
     }
 }
