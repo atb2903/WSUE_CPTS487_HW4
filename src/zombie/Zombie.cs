@@ -2,12 +2,21 @@ namespace Zombie;
 
 public class Zombie : ZombieComponent
 {
-    public Zombie(int health) : base(health)
+    public Zombie(int health, ZombieType type) : base(health, type)
     {
     }
 
     public override void TakeDamage(int damage)
     {
-        // TODO: implement damage logic for the zombie
+        health -= damage;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    private override void Die()
+    {
+        isAlive = false;
     }
 }
